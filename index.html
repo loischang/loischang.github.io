@@ -1,9 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HELLO WORLDDD :)</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sahitya:400,700" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <title> The Sage Mentorship Project</title>
 </head>
 <body>
+  <div class = "nav-home">
+    <div class = "nav-container">
+      <a class = "nav-item" href = "index.html">home</a>
+      <a class = "nav-item" href = "about_us.html">about us</a>
+      <a class = "nav-item" href = "index.html">news & events</a>
+      <a class = "nav-item" href = "schools.html">schools</a>
+      <a class = "nav-item" href = "index.html">donate</a>
+    </div>
+  </div>
+  <div class = "banner">
+    <div class = "banner-container">
+      <div class="col-lg-8 col-md-offset-2">
+      <a href = "http://www.sagementors.org">
+        <img id = "sage-logo" src="assets/image/sage.png"/>
+      </a>
+        <h1 class="banner-title">
+          Sage Mentorship Project
+        </h1>
+        <h4 class="banner-body">
+          The Sage Mentorship Project is UC Berkeley's largest one-on-one mentorship organization, matching hundreds of committed UC Berkeley students to an elementary school-aged mentee each year.
+        </h4>
+      </div>
+    </div>
+  </div>
 
+
+  <div class = "body">
+  <div class="home-triangle" style="border-left: 1300px solid white"></div>
+    <div class = "body-container">
+      <div class = "body-item-container">
+        <div class = "body-title">
+          our mission ------------------
+        </div>
+        <img class= "body-image" id = "lightbulb" src = "assets/image/lightbulb.png"/>
+        <div class = "body-text">
+          <p>Our mission is to provide youth from the ten Berkeley and Oakland elementary schools we reach with a personal connection to mentors through academic and extracurricular activities in order to foster life skills and personal growth.</p>
+          <p>The Sage Mentorship Project’s mission is to serve the youth of our communities by:</p>
+          <div class = "number-image-container">
+            <img class = "number-image" id = "1" src="assets/image/one.png"/>
+            <img class = "number-image" id = "2" src="assets/image/two.png"/>
+            <img class = "number-image" id = "3" src="assets/image/three.png"/>
+            <img class = "number-image" id = "4" src="assets/image/four.png"/>
+          </div>
+          <div class = "number-text-container">
+            <div class = "number-text" id = "t0"> filler </div>
+            <div class = "number-text" id = "t1">Recruiting high-achieving and dedicated UC Berkeley students who are committed to fostering long-lasting and education-driven relationship with their mentees (1)</div>
+            <div class = "number-text" id = "t2">Providing elementary school students with encouragement to build strong academic values and self-confidence through classroom and after-school activities (2)</div>
+            <div class = "number-text" id = "t3">Focusing on improving Math and Reading scores through mentors tailoring their one-on-one weekly sessions to meet the academic needs of their mentees (3)</div>
+            <div class = "number-text" id = "t4">Enabling UC Berkeley students to acquire leadership skills and life-enhancing experiences that cannot be learned in the classroom, but are only gained through real-life relationships (4)</div>
+          </div>
+        </div>
+      </div>
+      <div class = "body-item-container">
+        <div class = "body-title">
+        fall infosessions ------------
+        </div>
+        <img class= "body-image" id = "swirl" src = "assets/image/people.png"/>
+        <div class = "body-text">
+          <p> We only recruit new members at the beginning of each semester! Our infosessions have already passed, but if you're interested in joining, we will be posting Spring infosessions February 2017!</p>
+
+          <p> Contact recruitment@sagementorship.org if you have any questions! </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+<script>
+$(document).scroll(function(){
+    if($(this).scrollTop() > 600)
+    {
+       $('.nav-home').css({"background":"#11B3F0"});
+    } else {
+       $('.nav-home').css({"background":"transparent"});
+    }
+});
+</script>
 </html>
